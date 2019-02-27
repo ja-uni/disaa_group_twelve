@@ -15,4 +15,5 @@ COPY CourseOffers(CourseOfferId, CourseId, Year, Quartile) FROM 'mnt/ramdisk/tab
 COPY TeacherAssignmentsToCourses(CourseOfferId, TeacherId) FROM 'mnt/ramdisk/tables/TeacherAssignmentsToCourses.table' DELIMITER ',' CSV HEADER;
 COPY StudentAssistants(CourseOfferId, StudentRegistrationId) FROM 'mnt/ramdisk/tables/StudentAssistants.table' DELIMITER ',' CSV HEADER;
 COPY CourseRegistrations(CourseOfferId, StudentRegistrationId, Grade) FROM 'mnt/ramdisk/tables/CourseRegistrations.table' DELIMITER ',' CSV HEADER NULL AS 'null';
+delete from Courseregistrations where grade is null;
 ANALYZE VERBOSE
