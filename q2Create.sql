@@ -3,4 +3,4 @@
 -- The file will be invoked with timeout 10m psql -d uni -f q2Create.sql
 -- Remember that the database (including the auxiliary structures) needs to be less than 11 GB.
 -- This file will be executed with postgres -d uni -f q2Create.sql 
-select 0
+select 0;
