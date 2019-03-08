@@ -17,4 +17,4 @@ alter table CourseOffers add primary key (CourseOfferId);
 alter table CourseRegistrations add primary key (CourseOfferId, StudentRegistrationId);
 alter table TeacherAssignmentsToCourses add primary key (CourseOfferId, TeacherId);
 alter table StudentAssistants add primary key (CourseOfferId, StudentRegistrationId);
-ANALYZE VERBOSE
+ANALYZE VERBOSE;
